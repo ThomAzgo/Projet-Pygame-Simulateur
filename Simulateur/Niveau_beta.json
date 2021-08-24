@@ -1,0 +1,100 @@
+{
+   "LevelName":"Niveau Beta",
+    "Duree": 900,
+    "NombreDePoints":[1000,2000,3000],
+    "NiveauSuivant":"Niveau Beta 2",
+    "numeroperso":"2",
+
+    "cas":{
+
+        "phrase1" :{
+
+            "typeAction":1,
+            "phrasePNJ":"Je suis un pnj choisis une des 4 actions ici",
+
+            "Choix":{
+                "Choix1":"Action 1",
+                "Choix2":"Action 2",
+                "Choix3":"Action 3",
+                "Choix4":"Action 4"
+            },
+
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase3",10000,"neutre"],
+                "reponse2":["Tu as choisi l'action 2","phrase666",200,"colere"],
+                "reponse3":["Tu as choisi l'action 3","phrase3",100,"joie"],
+                "reponse4":["Tu as choisi l'action 4 qui mène à la fin","fin",200,"peur"]
+            }
+        },
+
+
+        
+
+
+        "phrase3" :{
+
+            "typeAction":2,
+            "nbrMorceau":2,
+            "temps":30,
+            
+            "phrasePNJ":"Je suis un pnj et tu es dans le cas 3, choisis une des 4 morceaux de phrase",
+
+            "morceau1":{
+                "Choix1":["Je","morceau2",50],
+                "Choix2":["Tu","morceau3",50],
+                "Choix3":["Je2","morceau2",0],
+                "Choix4":["Tu2","morceau3",0]
+            },
+
+            "morceau2":{
+                "Choix1":["suis là","stop",100],
+                "Choix2":["s'apelle groot","stop",0],
+                "Choix3":["suis là2","stop",50],
+                "Choix4":["s'apelle groot2","stop",0]
+
+            },"morceau3":{
+                "Choix1":["es là","stop",100],
+                "Choix2":["s'apelle groot","stop",0],
+                "Choix3":["es là2","stop",0],
+                "Choix4":["s'apelle groot2","stop",0]
+            },
+
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase666","neutre"],
+                "reponse2":["Tu as choisi l'action 2","phrase666","colere"],
+                "reponse3":["Tu as choisi l'action 3","phrase666","joie"],
+                "reponse4":["Tu as choisi l'action 4","phrase666","peur"]
+            }
+        },
+
+
+        "phrase666" :{
+
+            "typeAction":1,
+            "temps":"10",
+            "phrasePNJ":"Tu es dans la dernière phrase et le dernier cas, tu as 10 secondes pour choisir une action",
+
+            "Choix":{
+                "Choix1":"666 1",
+                "Choix2":"666 2",
+                "Choix3":"666 3",
+                "Choix4":"666 4"
+            },
+
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","fin",100,"neutre"],
+                "reponse2":["Tu as choisi l'action 2","fin",100,"colere"],
+                "reponse3":["Tu as choisi l'action 3","fin",100,"joie"],
+                "reponse4":["Tu as choisi l'action 4","fin",100,"peur"]
+            }
+        }
+
+
+
+
+
+
+        
+    }
+}
+

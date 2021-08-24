@@ -1,0 +1,161 @@
+{
+    "LevelName":"Niveau1",
+     "Duree": 900,
+     "NombreDePoints":[1000,2000,3000],
+     "NiveauSuivant":"Niveau Beta 2",
+     "numeroperso":"2",
+ 
+     "cas":{
+ 
+         "phrase1" :{
+ 
+            "typeAction":1,
+            "phrasePNJ":"On va commencer doucement, voici mes cartes Noctali et Mentali je ne les vendrai que en duo pour 300€.",
+ 
+            "Choix":{
+                 "Choix1":"Inspecter les cartes.",
+                 "Choix2":"Hum..le meilleur que je puisse faire c'est 5€ (ref à PAWN STAR)",
+                 "Choix3":"Ok vendu.",
+                 "Choix4":"Je t'en propose 200€"
+            },
+ 
+            "reponse":{
+                 "reponse1":["Tu as Choisi l'action 1","phrase2",200,"neutre"],
+                 "reponse2":["Tu as choisi l'action 2 ","fin",0,"colere"],
+                 "reponse3":["Tu as choisi l'action 3","phrase3",50,"joie"],
+                 "reponse4":["Tu as choisi l'action 4","phrase3",100,"peur"]
+            }
+        },
+
+        "phrase2":{
+            "typeAction":1,
+            "phrasePNJ":"Vous constatez qu'il y'a une éraflure sur une des cartes.",
+ 
+            "Choix":{
+                 "Choix1":"Tes cartes elles sont abimé gros tu vas voir qui c'est David Lafarge dans la vie réelle wallah",
+                 "Choix2":"l y'en a une qui a une éraflure, je t'en propose 150€ les deux. J'en ai vu d'autres en meilleur état et moins chère..",
+                 "Choix3":"Je te les prends à 300€ bg",
+                 "Choix4":"Je vais pas te les prendre tu proposes quoi d'autre ?"
+            },
+ 
+            "reponse":{
+                 "reponse1":["Tu as Choisi l'action 1","fin",100,"peur"],
+                 "reponse2":["Tu as choisi l'action 2 ","phrase3",200,"neutre"],
+                 "reponse3":["Tu as choisi l'action 3","phrase3",100,"joie"],
+                 "reponse4":["Tu as choisi l'action 4","phrase3",100,"peur"]
+            }
+        },
+
+        "phrase3":{
+            "typeAction":1,
+            "phrasePNJ":"ça marche ! J'ai aussi ma carte Dracaufeu Édition 1 holographique française et je veux vraiment m'en débarrasser elle vaut au moins 7500€ en bonne état.",
+ 
+            "Choix":{
+                 "Choix1":"Inspecter la carte",
+                 "Choix2":"Invoquer les esprits et partir.",
+                 "Choix3":"Proposer 5000€ cash immédiatement",
+                 "Choix4":"Refuser et partir"
+            },
+ 
+            "reponse":{
+                 "reponse1":["Tu as Choisi l'action 1","phrase4",200,"neutre"],
+                 "reponse2":["Tu as choisi l'action 2 ","phrase5",50,"peur"],
+                 "reponse3":["Tu as choisi l'action 3","fin",-5000,"joie"],
+                 "reponse4":["Tu as choisi l'action 4","fin",100,"colere"]
+            }
+        },
+
+        "phrase4":
+        {
+            "typeAction":1,
+            "phrasePNJ":"Vous découvrez que la carte est fausse.",
+ 
+            "Choix":{
+                 "Choix1":"Vous faîtes l'aveugle et vous l'achetez à 7500€",
+                 "Choix2":"Ta carte c'est une fausse tu ne m'aura pas je me barre...",
+                 "Choix3":"Commencer à Jurer en Québecois avant de partir",
+                 "Choix4":"Finalement j'en veux pas."
+            },
+ 
+            "reponse":{
+                 "reponse1":["Tu as Choisi l'action 1","fin",-5000,"joie"],
+                 "reponse2":["Tu as choisi l'action 2 ","fin",200,"peur"],
+                 "reponse3":["Tu as choisi l'action 3","phrase6",100,"peur"],
+                 "reponse4":["Tu as choisi l'action 4","fin",200,"colere"]
+            }
+        },
+        "phrase5":
+        {
+            "typeAction":2,
+            "phrasePNJ":"Alors ?",
+            "morceau1":{
+                "Choix1":["Diviundis Demarmus","morceau2",50],
+                "Choix2":["Traaro Purius","morceau3",50],
+                "Choix3":["Incentim","morceau2",50],
+                "Choix4":["Inceptuno Terribus","morceau3",50]
+            },
+
+            "morceau2":{
+                "Choix1":["Protictus Ratuno","morceau4",50],
+                "Choix2":["Increus Tormenulsis","morceau4",50],
+                "Choix3":["Vengeucto Infectenta","morceau4",50],
+                "Choix4":["Levitaori Agoid ","morceau4",50]
+
+            },
+            
+            "morceau3":{
+                "Choix1":["Redueus Repellula","morceau4",50],
+                "Choix2":["Neurictus Purotum","morceau4",50],
+                "Choix3":["Obliid Monsteom","morceau4",50],
+                "Choix4":["Portego","morceau4",50]
+            },
+            "morceau4":{
+                "Choix1":["Intererbus Oppresite","stop",50],
+                "Choix2":["Regeeous Phanulsis","stop",50],
+                "Choix3":["Curucio Corrupenim","stop",50],
+                "Choix4":["Petentus Hidorgio","stop",50]
+            },
+
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","fin","neutre"],
+                "reponse2":["Tu as choisi l'action 2","fin","colere"],
+                "reponse3":["Tu as choisi l'action 3","fin","joie"],
+                "reponse4":["Tu as choisi l'action 4","fin","peur"]
+            }
+        },
+        
+        "phrase6":
+        {
+            "typeAction":1,
+            "phrasePNJ":"Alors ?",
+ 
+            "Choix":{
+                 "Choix1":"Gériboire de crime ",
+                 "Choix2":"Maudite marde de tabarslaque ",
+                 "Choix3":"Géritole de batèche",
+                 "Choix4":"aboire de sapristi "
+            },
+ 
+            "reponse":{
+                 "reponse1":["Tu as Choisi l'action 1","fin",100,"joie"],
+                 "reponse2":["Tu as choisi l'action 2 ","fin",100,"peur"],
+                 "reponse3":["Tu as choisi l'action 3","fin",100,"peur"],
+                 "reponse4":["Tu as choisi l'action 4","fin",100,"colere"]
+            }
+        }
+
+        
+
+
+        
+ 
+ 
+ 
+ 
+ 
+ 
+         
+     }
+ }
+ 
+ 

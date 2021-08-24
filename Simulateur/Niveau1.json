@@ -1,0 +1,156 @@
+{
+    "LevelName":"Niveau 1",
+    "NombreDePoints":[400,600,800],
+    "numeroperso":"1",
+    "cas":{
+
+
+        "phrase1":{
+        "typeAction":1,
+        "phrasePNJ":"Bonjour à vous, merci d'être venu à cet entretien",
+        "Choix":{
+            "Choix1":"Bonjour Madame, merci de m’accorder votre temps",
+            "Choix2":"Aurevoir",
+            "Choix3":"Hey salut ! Comment tu vas ? La forme ?",
+            "Choix4":"*Ne rien dire, rester debout et faire une T-pose*"
+        },
+        "reponse":{
+            "reponse1":["Tu as Choisi l'action 1","phrase2",100,"joie"],
+            "reponse2":["Tu as choisi l'action 2","fin",0,"neutre"],
+            "reponse3":["Tu as choisi l'action 3","phrase2",0,"colere"],
+            "reponse4":["Tu as choisi l'action 4","phrase1.1",0,"peur"]
+            }
+        },
+
+
+        "phrase1.1":{
+            "typeAction":1,
+            "phrasePNJ":"Heum… vous allez bien ? Vous avez besoin d’aide peut être ? Qu’essayez-vous de me dire ?",
+            "Choix":{
+                "Choix1":"Excusez-moi, j’ai eu une soudaine envie de faire du Yoga, reprenons …",
+                "Choix2":"*Monter sur le bureau et danser la tecktonique*",
+                "Choix3":"*Faire comme si rien ne s’était passé* Bonjour Madame, merci de m’accorder votre temps",
+                "Choix4":"*Toujours rien dire et partir*"
+            },
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase2",25,"joie"],
+                "reponse2":["Tu as choisi l'action 2","fin",0,"neutre"],
+                "reponse3":["Tu as choisi l'action 3","phrase2",25,"peur"],
+                "reponse4":["Tu as choisi l'action 4","fin",0,"peur"]
+            }
+        },
+
+
+        "phrase2":{
+            "typeAction":1,
+            "phrasePNJ":"Très bien, commençons, j’ai vaguement regardé votre CV, que faites-vous comme études ?",
+            "Choix":{
+                "Choix1":"Je vous intéresse pas ou quoi ? je l’ai marqué en gros et bien en évidence sur mon CV, lisez mieux !",
+                "Choix2":"Je suis étudiant 1ère année à HETIC depuis Octobre, j’ai réalisé plusieurs projets où j’ai appris les bases du web et du code.",
+                "Choix3":"Je suis étudiant mais je compte tout plaquer l’année prochaine pour devenir le streamer numéro 1 sur Twitch et me faire un max de fric !",
+                "Choix4":"Je suis étudiant 1ère année à HETIC depuis Octobre mais je serais au chômage si vous ne me prenez pas, prenez-moi svp !"
+            },
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase3",0,"joie"],
+                "reponse2":["Tu as choisi l'action 2","phrase3",100,"neutre"],
+                "reponse3":["Tu as choisi l'action 3","phrase3",50,"colere"],
+                "reponse4":["Tu as choisi l'action 4","phrase3",50,"peur"]
+            }
+        },
+
+
+        "phrase3":{
+            "typeAction":1,
+            "phrasePNJ":"En effet, continuons … quel genre de projets avez-vous réalisé ? Pouvez-vous m’en montrer un svp ?",
+            "Choix":{
+                "Choix1":"J’ai fait des trucs c’est vrai … mais j’ai la flemme de présenter enfait, tout est listé sur mon GitHub je vais faire une sieste en attendant.",
+                "Choix2":"Voici une vidéo compilation de meilleurs pets réalisé par mes soins, je peux vous faire une démonstration en direct si ça vous intéresse.",
+                "Choix3":"Voici mon lien de chaîne Twitch, toute les rediffusions sont disponibles sous ma bio.",
+                "Choix4":"Voici un projet web à base de html, css et js. C’est un site de mini jeux *blabla* …"
+            },
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase4",0,"colere"],
+                "reponse2":["Tu as choisi l'action 2","phrase4",0,"peur"],
+                "reponse3":["Tu as choisi l'action 3","phrase4",25,"colere"],
+                "reponse4":["Tu as choisi l'action 4","phrase4",100,"joie"]
+            }
+        },
+
+
+        "phrase4":{
+            "typeAction":1,
+            "phrasePNJ":"Brillant, Je n’en aurais pas mieux attendus d’un étudiant comme vous … que pensez vous apporter à notre entreprise ?",
+            "Choix":{
+                "Choix1":"Un semblant de travail contre un rapport de stage bateau et bien remplis.",
+                "Choix2":"Mon magnifique acte de présence contre un bon salaire bien gras *miam*.",
+                "Choix3":"J’aimerais pouvoir contribuer à l’évolution de votre entreprise et faire bénéficier mon savoir-faire dans vos missions",
+                "Choix4":"Probablement réaliser toutes les tâches chiantes tout en étant sous payé."
+            },
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase5",0,"colere"],
+                "reponse2":["Tu as choisi l'action 2","phrase5",0,"colere"],
+                "reponse3":["Tu as choisi l'action 3","phrase5",100,"joie"],
+                "reponse4":["Tu as choisi l'action 4","phrase5",0,"colere"]
+            }
+        },
+
+
+        "phrase5":{
+            "typeAction":1,
+            "phrasePNJ":"Super, nous en avons terminé avec les questions, passons maintenant à un petit exercice pratique, bonne chance ! *vous donne le sujet*",
+            "Choix":{
+                "Choix1":"Oui, merci",
+                "Choix2":"Oui, merci",
+                "Choix3":"Oui, merci",
+                "Choix4":"Non *partir*"
+            },
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","phrase6",0,"neutre"],
+                "reponse2":["Tu as choisi l'action 2","phrase6",0,"neutre"],
+                "reponse3":["Tu as choisi l'action 3","phrase6",0,"neutre"],
+                "reponse4":["Tu as choisi l'action 4","fin",0,"peur"]
+            }
+        },
+
+
+        "phrase6" :{
+            "typeAction":2,
+            "phrasePNJ":"En Python, créer 2 variables et vérifier si celles-ci sont égales (attention difficile)",
+
+            "morceau1":{
+                "Choix1":["A = int(input())","morceau2",100],
+                "Choix2":["A = (0)","morceau2",0],
+                "Choix3":["MonNiveauEnCode = 0 ;","morceau2",0],
+                "Choix4":["#Ma liste de course","morceau2",0]
+            },
+
+            "morceau2":{
+                "Choix1":["B = (0)","morceau3",0],
+                "Choix2":["MonSalaireReçu = 9999","morceau3",0],
+                "Choix3":["#Beurre de cacao","morceau3",0],
+                "Choix4":["B = int(input())","morceau3",100]
+
+            },"morceau3":{
+                "Choix1":["#Beurre de cacahuète","morceau4",0],
+                "Choix2":["MonTempsDePause = 9999","morceau4",0],
+                "Choix3":[" if A == B :","morceau4",100],
+                "Choix4":["if A <=>B :","morceau4",0]
+
+            },"morceau4":{
+                "Choix1":["print(Elles ne sont pas égales)","stop",0],
+                "Choix2":["#Beurre bio","stop",0],
+                "Choix3":["print(Elles sont égales)","stop",100],
+                "Choix4":["MonTempsDeTravail = 0","stop",0]
+            },
+
+            "reponse":{
+                "reponse1":["Tu as Choisi l'action 1","fin","neutre"],
+                "reponse2":["Tu as choisi l'action 2","fin","neutre"],
+                "reponse3":["Tu as choisi l'action 3","fin","neutre"],
+                "reponse4":["Tu as choisi l'action 4","fin","neutre"]
+
+
+            }
+        }
+    }
+} 
